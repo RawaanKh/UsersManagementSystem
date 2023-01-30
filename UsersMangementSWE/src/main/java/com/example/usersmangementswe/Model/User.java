@@ -29,7 +29,7 @@ public class User {
     @NotEmpty(message = "cannot be empty")
     private String email;
 
-   // @Column(columnDefinition = varchar ()check ("role='user'or role='admin',not null")
+   // @Column(columnDefinition = "varchar(5)check (role='user' or role='admin'),not null")
     @NotEmpty(message = "cannot be empty")
     @Pattern(regexp = "^admin|user$",message = "role can be admin or user only")
     private String role;
